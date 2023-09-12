@@ -42,4 +42,4 @@ USER nextjs
 
 ENV PORT 8080
 
-CMD ["node", "server.js"]
+CMD ["NODE_ENV=${NODE_ENV}", "node", "server.js"]
