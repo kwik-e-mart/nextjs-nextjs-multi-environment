@@ -116,6 +116,9 @@ export default function Home() {
             </p>
           </a>
         </div>
+        <div>
+          <p className={inter.className}>Version { process.env.NEXT_PUBLIC_VERSION }</p>
+        </div>
       </main>
     </>
   )

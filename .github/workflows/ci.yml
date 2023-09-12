@@ -25,7 +25,7 @@ jobs:
     needs: prepare
     strategy:
       matrix:
-        environment: [development, stage, production]
+        environment: [development, production]
     steps:
       - name: Get build parameters
         id: get-build-parameters
