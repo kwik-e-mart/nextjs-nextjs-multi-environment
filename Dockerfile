@@ -1,4 +1,4 @@
-ARG NODE_ENV=production
+ARG NODE_ENV
 
 FROM node:18-alpine AS base
 
