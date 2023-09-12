@@ -1,3 +1,5 @@
+ARG NODE_ENV=production
+
 FROM node:18-alpine AS base
 
 FROM base AS deps
@@ -24,7 +26,7 @@ RUN yarn build
 FROM base AS runner
 WORKDIR /app
 
-ENV NODE_ENV production
+ENV NODE_ENV $NODE_ENV
 ENV NEXT_TELEMETRY_DISABLED 1
 
 RUN addgroup --system --gid 1001 nodejs
